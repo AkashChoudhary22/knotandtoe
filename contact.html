@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Knot & Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Knot & <span>Toe</span></div>
+    <p>Premium Designer Socks</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html" >Blog</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-hero">
+    <div class="contact-hero-content">
+      <h1>Get in <span>Touch</span></h1>
+      <p>We'd love to hear from you! Our team is always ready to help with any questions or concerns.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="contact-section">
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Whether you have questions about our products, need assistance with an order, or want to collaborate with us - we're here to help you every step of the way!</p>
+        
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h3>Our Store</h3>
+              <p>123 Fashion Street, Hyderabad, India</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h3>Phone</h3>
+              <p><a href="tel:+919876543210" class="contact-link">+91 9876543210</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:hello@knotandtoe.com" class="contact-link">hello@knotandtoe.com</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h3>Opening Hours</h3>
+              <p>Monday - Saturday: 10:00 AM - 7:00 PM</p>
+              <p>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="social-connect">
+          <h3>Connect With Us</h3>
+          <p>Follow us on social media for the latest updates, style inspirations, and exclusive offers!</p>
+          <div class="social-icons-large">
+            <a href="#" class="social-link">
+              <div class="social-icon"><i class="fab fa-instagram"></i></div>
+              <span>Instagram</span>
+            </a>
+            <a href="#" class="social-link">
+              <div class="social-icon"><i class="fab fa-facebook-f"></i></div>
+              <span>Facebook</span>
+            </a>
+            <a href="#" class="social-link">
+              <div class="social-icon"><i class="fab fa-twitter"></i></div>
+              <span>Twitter</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form-container">
+        <div class="form-header">
+          <h2>Send Us a Message</h2>
+          <p>We typically respond within 24 hours</p>
+        </div>
+        
+        <form id="contactForm" onsubmit="event.preventDefault(); validateAndSubmitForm();">
+          <div class="form-group">
+            <label for="name">Your Name <span class="required">*</span></label>
+            <input type="text" id="name" class="form-control" required>
+            <span class="error-message" id="name-error">Please enter your name</span>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" class="form-control" required>
+            <span class="error-message" id="email-error">Please enter a valid email address</span>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" class="form-control">
+            <span class="error-message" id="phone-error">Please enter a valid phone number</span>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="subject">Subject <span class="required">*</span></label>
+              <select id="subject" class="form-control" required>
+                <option value="">Select a subject</option>
+                <option value="Product Inquiry">Product Inquiry</option>
+                <option value="Order Status">Order Status</option>
+                <option value="Return/Exchange">Return/Exchange</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="error-message" id="subject-error">Please select a subject</span>
+            </div>
+            
+            <div class="form-group">
+              <label for="order">Order Number (if applicable)</label>
+              <input type="text" id="order" class="form-control">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message <span class="required">*</span></label>
+            <textarea id="message" class="form-control" rows="5" required></textarea>
+            <span class="error-message" id="message-error">Please enter your message</span>
+          </div>
+          
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="newsletter" checked>
+            <label for="newsletter">Subscribe to our newsletter for exclusive offers</label>
+          </div>
+          
+          <button type="submit" class="btn submit-btn">Send Message</button>
+          <p class="form-footer">By submitting this form, you agree to our <a href="#">Privacy Policy</a>.</p>
+        </form>
+      </div>
+    </div>
+    
+    <div class="download-section">
+      <div class="download-content">
+        <h2>Need More Information?</h2>
+        <p>Download our return policy document for detailed information about our return and exchange procedures.</p>
+        <a href="files/Returnpolicy.pdf" class="download-btn" download>
+            <span>Download Return Policy</span>
+          <span class="download-icon"><i class="fas fa-file-download"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="map-container">
+      <div class="map-header">
+        <h2>Visit Our Store</h2>
+        <p>Come experience our socks in person at our flagship store in Hyderabad</p>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7407185793636!2d77.7332557!3d12.9884285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1191d5c716ad%3A0x8074c8582505483d!2sOffice-%20Primeco%20Union%20City%20(PUCA)!5e0!3m2!1sen!2sin!4v1747045199566!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="directions">
+        <h3>Getting Here</h3>
+        <div class="direction-items">
+          <div class="direction-item">
+            <div class="direction-icon"><i class="fas fa-car"></i></div>
+            <p>Plenty of parking available at our location</p>
+          </div>
+          <div class="direction-item">
+            <div class="direction-icon"><i class="fas fa-subway"></i></div>
+            <p>5 min walk from Ameerpet Metro Station</p>
+          </div>
+          <div class="direction-item">
+            <div class="direction-icon"><i class="fas fa-bus"></i></div>
+            <p>Bus routes 45, 72, and 108 stop nearby</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>What payment methods do you accept?</h3>
+            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="accordion-content">
+            <p>We accept all major credit cards, debit cards, UPI, net banking, and popular digital wallets including PayTM, PhonePe, and Google Pay.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>How long does shipping take?</h3>
+            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="accordion-content">
+            <p>Standard shipping within India typically takes 3-5 business days. Express shipping (1-2 business days) is available for an additional fee.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>What is your return policy?</h3>
+            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="accordion-content">
+            <p>We offer a 30-day return policy for unworn items with original tags attached. Please see our full return policy document for details.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <h3>Do you offer international shipping?</h3>
+            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="accordion-content">
+            <p>Yes, we ship internationally to select countries. International shipping typically takes 7-14 business days depending on the destination.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Track Order</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Our Collections</h3>
+        <ul>
+          <li><a href="#">Athletic</a></li>
+          <li><a href="#">Casual</a></li>
+          <li><a href="#">Formal</a></li>
+          <li><a href="#">Limited Edition</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Have questions? Reach out to us directly.</p>
+        <div class="contact-links">
+          <p><i class="fas fa-phone"></i> <a href="tel:+919876543210">+91 9876543210</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:hello@knotandtoe.com">hello@knotandtoe.com</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Hyderabad</p>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Knot & Toe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Form validation
+    function validateAndSubmitForm() {
+      let isValid = true;
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const phone = document.getElementById('phone');
+      const subject = document.getElementById('subject');
+      const message = document.getElementById('message');
+      
+      // Reset error messages
+      document.querySelectorAll('.error-message').forEach(element => {
+        element.style.display = 'none';
+      });
+      
+      // Validate name
+      if (!name.value.trim()) {
+        document.getElementById('name-error').style.display = 'block';
+        isValid = false;
+      }
+      
+      // Validate email
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email.value)) {
+        document.getElementById('email-error').style.display = 'block';
+        isValid = false;
+      }
+      
+      // Validate phone (if provided)
+      if (phone.value && !/^[0-9+\- ]{10,15}$/.test(phone.value)) {
+        document.getElementById('phone-error').style.display = 'block';
+        isValid = false;
+      }
+      
+      // Validate subject
+      if (!subject.value) {
+        document.getElementById('subject-error').style.display = 'block';
+        isValid = false;
+      }
+      
+      // Validate message
+      if (!message.value.trim()) {
+        document.getElementById('message-error').style.display = 'block';
+        isValid = false;
+      }
+      
+      if (isValid) {
+        // Show success message
+        alert('Your message has been sent successfully! We will get back to you soon.');
+        document.getElementById('contactForm').reset();
+      }
+      
+      return isValid;
+    }
+    
+    // Toggle accordion
+    function toggleAccordion(element) {
+      const content = element.nextElementSibling;
+      const icon = element.querySelector('.accordion-icon i');
+      
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+        icon.className = 'fas fa-plus';
+      } else {
+        // Close all other accordion items
+        document.querySelectorAll('.accordion-content').forEach(item => {
+          item.style.display = 'none';
+        });
+        document.querySelectorAll('.accordion-icon i').forEach(iconEl => {
+          iconEl.className = 'fas fa-plus';
+        });
+        
+        content.style.display = 'block';
+        icon.className = 'fas fa-minus';
+      }
+    }
+    
+    // Download return policy
+    function downloadReturnPolicy() {
+      alert('Return policy document is downloading...');
+      // In a real implementation, this would trigger a file download
+    }
+  </script>
+</body>
+</html>

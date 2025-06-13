@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Knot & Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Knot & <span>Toe</span></div>
+    <p>Premium Designer Socks</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="blog-hero">
+    <div class="blog-hero-content">
+      <h1>Our <span>Blog</span></h1>
+      <p>Stories, trends, and insights from the world of premium socks</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="blog-intro">
+      <h2>Latest from Knot & Toe</h2>
+      <p>Discover the latest trends in sock fashion, care tips, styling advice, and behind-the-scenes stories from our design team.</p>
+    </section>
+
+    <section class="blog-content">
+      <div class="blog-grid">
+        <div class="blog-sidebar">
+          <div class="sidebar-widget">
+            <h3>Categories</h3>
+            <ul class="category-list">
+              <li><a href="#" data-category="all" class="category-filter active">All Posts</a></li>
+              <li><a href="#" data-category="fashion" class="category-filter">Fashion & Style</a></li>
+              <li><a href="#" data-category="care" class="category-filter">Sock Care</a></li>
+              <li><a href="#" data-category="trends" class="category-filter">Trends</a></li>
+              <li><a href="#" data-category="company" class="category-filter">Company News</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Recent Posts</h3>
+            <div class="recent-posts">
+              <div class="recent-post">
+                <img src="images/Quirky.jpg?w=80&h=60&fit=crop" alt="Recent post">
+                <div class="recent-post-content">
+                  <h4>How to Style Quirky Socks</h4>
+                  <span class="post-date">2 days ago</span>
+                </div>
+              </div>
+              <div class="recent-post">
+                <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?w=80&h=60&fit=crop" alt="Recent post">
+                <div class="recent-post-content">
+                  <h4>Sustainable Sock Materials</h4>
+                  <span class="post-date">1 week ago</span>
+                </div>
+              </div>
+              <div class="recent-post">
+                <img src="images/winter.jpg?w=80&h=60&fit=crop" alt="Recent post">
+                <div class="recent-post-content">
+                  <h4>Winter Sock Collection</h4>
+                  <span class="post-date">2 weeks ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-widget newsletter-widget">
+            <h3>Stay Updated</h3>
+            <p>Get the latest blog posts delivered to your inbox.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email" required>
+              <button type="submit" class="btn newsletter-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="blog-posts">
+          <article class="blog-post" data-category="fashion">
+            <div class="post-image">
+              <img src="images/Quirky.jpg?w=600&h=300&fit=crop" alt="Colorful socks styling">
+              <div class="post-category">Fashion & Style</div>
+            </div>
+            <div class="post-content">
+              <div class="post-meta">
+                <span class="post-date"><i class="fas fa-calendar"></i> June 8, 2025</span>
+                <span class="post-author"><i class="fas fa-user"></i> Style Team</span>
+                <span class="post-comments"><i class="fas fa-comments"></i> 12 Comments</span>
+              </div>
+              <h2>How to Style Quirky Socks for Every Occasion</h2>
+              <p>Gone are the days when socks were just hidden accessories. Today's fashion-forward individuals are embracing bold, colorful socks as statement pieces. Learn how to incorporate vibrant sock designs into your wardrobe...</p>
+              <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-post" data-category="care">
+            <div class="post-image">
+              <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?w=600&h=300&fit=crop" alt="Sock care tips">
+              <div class="post-category">Sock Care</div>
+            </div>
+            <div class="post-content">
+              <div class="post-meta">
+                <span class="post-date"><i class="fas fa-calendar"></i> June 5, 2025</span>
+                <span class="post-author"><i class="fas fa-user"></i> Care Expert</span>
+                <span class="post-comments"><i class="fas fa-comments"></i> 8 Comments</span>
+              </div>
+              <h2>The Ultimate Guide to Sock Care and Maintenance</h2>
+              <p>Your premium socks deserve premium care. Discover the best practices for washing, drying, and storing your designer socks to ensure they maintain their quality, color, and comfort for years to come...</p>
+              <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-post" data-category="trends">
+            <div class="post-image">
+              <img src="images/Top five.jpg?w=600&h=300&fit=crop" alt="Winter sock trends">
+              <div class="post-category">Trends</div>
+            </div>
+            <div class="post-content">
+              <div class="post-meta">
+                <span class="post-date"><i class="fas fa-calendar"></i> June 1, 2025</span>
+                <span class="post-author"><i class="fas fa-user"></i> Design Team</span>
+                <span class="post-comments"><i class="fas fa-comments"></i> 15 Comments</span>
+              </div>
+              <h2>Top 5 Sock Trends to Watch This Season</h2>
+              <p>From bold geometric patterns to sustainable materials, this season brings exciting trends in sock fashion. Our design team breaks down the top trends that are shaping the future of sock design...</p>
+              <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-post" data-category="company">
+            <div class="post-image">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=300&fit=crop" alt="Behind the scenes">
+              <div class="post-category">Company News</div>
+            </div>
+            <div class="post-content">
+              <div class="post-meta">
+                <span class="post-date"><i class="fas fa-calendar"></i> May 28, 2025</span>
+                <span class="post-author"><i class="fas fa-user"></i> Knot & Toe Team</span>
+                <span class="post-comments"><i class="fas fa-comments"></i> 6 Comments</span>
+              </div>
+              <h2>Behind the Scenes: Our Design Process</h2>
+              <p>Ever wondered how we create our unique sock designs? Take a peek behind the curtain as we walk you through our creative process, from initial concept sketches to the final product...</p>
+              <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-post" data-category="fashion">
+            <div class="post-image">
+              <img src="images/formal.jpg?w=300&h=400&fit=crop" alt="Professional sock styling">
+              <div class="post-category">Fashion & Style</div>
+            </div>
+            <div class="post-content">
+              <div class="post-meta">
+                <span class="post-date"><i class="fas fa-calendar"></i> May 25, 2025</span>
+                <span class="post-author"><i class="fas fa-user"></i> Style Team</span>
+                <span class="post-comments"><i class="fas fa-comments"></i> 10 Comments</span>
+              </div>
+              <h2>Professional Sock Styling: Office to Evening</h2>
+              <p>Master the art of transitioning your sock game from professional settings to evening events. Learn which patterns work best for business casual, formal meetings, and after-work social gatherings...</p>
+              <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-post" data-category="trends">
+            <div class="post-image">
+              <img src="images/Color.jpg?w=600&h=300&fit=crop" alt="Sustainable fashion">
+              <div class="post-category">Trends</div>
+            </div>
+            <div class="post-content">
+              <div class="post-meta">
+                <span class="post-date"><i class="fas fa-calendar"></i> May 22, 2025</span>
+                <span class="post-author"><i class="fas fa-user"></i> Sustainability Team</span>
+                <span class="post-comments"><i class="fas fa-comments"></i> 18 Comments</span>
+              </div>
+              <h2>Sustainable Sock Materials: The Future of Fashion</h2>
+              <p>Explore the innovative eco-friendly materials revolutionizing sock manufacturing. From bamboo fibers to recycled cotton, discover how sustainable choices are shaping the future of fashion...</p>
+              <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <a href="#" class="page-link disabled"><i class="fas fa-chevron-left"></i> Previous</a>
+        <a href="#" class="page-link active">1</a>
+        <a href="#" class="page-link">2</a>
+        <a href="#" class="page-link">3</a>
+        <a href="#" class="page-link">Next <i class="fas fa-chevron-right"></i></a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="form-header">
+        <h2>Get in <span>Touch</span></h2>
+        <p>Have questions about our premium socks or want to share your styling tips? We'd love to hear from you!</p>
+      </div>
+      
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <span class="error-message" id="firstNameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <span class="error-message" id="lastNameError"></span>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error-message" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+            <span class="error-message" id="phoneError"></span>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="subject">Subject *</label>
+          <select id="subject" name="subject" required>
+            <option value="">Select a topic</option>
+            <option value="product-inquiry">Product Inquiry</option>
+            <option value="styling-advice">Styling Advice</option>
+            <option value="care-tips">Sock Care Tips</option>
+            <option value="feedback">Feedback</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="other">Other</option>
+          </select>
+          <span class="error-message" id="subjectError"></span>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+          <span class="error-message" id="messageError"></span>
+        </div>
+        
+        <div class="form-group checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <span class="checkmark"></span>
+            Subscribe to our newsletter for styling tips and new product updates
+          </label>
+        </div>
+        
+        <button type="submit" class="btn submit-btn">
+          <i class="fas fa-paper-plane"></i>
+          Send Message
+        </button>
+        
+        <div class="success-message" id="successMessage">
+          <i class="fas fa-check-circle"></i>
+          Thank you! Your message has been sent successfully. We'll get back to you soon!
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Track Order</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Our Collections</h3>
+        <ul>
+          <li><a href="#">Athletic</a></li>
+          <li><a href="#">Casual</a></li>
+          <li><a href="#">Formal</a></li>
+          <li><a href="#">Limited Edition</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Have questions? Reach out to us directly.</p>
+        <div class="contact-links">
+          <p><i class="fas fa-phone"></i> <a href="tel:+919876543210">+91 9876543210</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:hello@knotandtoe.com">hello@knotandtoe.com</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Hyderabad</p>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Knot & Toe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Category Filter Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const categoryFilters = document.querySelectorAll('.category-filter');
+      const blogPosts = document.querySelectorAll('.blog-post');
+
+      categoryFilters.forEach(filter => {
+        filter.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Remove active class from all filters
+          categoryFilters.forEach(f => f.classList.remove('active'));
+          // Add active class to clicked filter
+          this.classList.add('active');
+          
+          const category = this.getAttribute('data-category');
+          
+          blogPosts.forEach(post => {
+            if (category === 'all' || post.getAttribute('data-category') === category) {
+              post.style.display = 'block';
+              post.style.animation = 'fadeIn 0.5s ease-in-out';
+            } else {
+              post.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Newsletter form submission
+      const newsletterForm = document.querySelector('.newsletter-form');
+      newsletterForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = this.querySelector('input[type="email"]').value;
+        if (email) {
+          alert('Thank you for subscribing to our newsletter!');
+          this.querySelector('input[type="email"]').value = '';
+        }
+      });
+
+      // Contact Form Validation and Submission
+      const contactForm = document.getElementById('contactForm');
+      const successMessage = document.getElementById('successMessage');
+
+      // Validation functions
+      function validateName(name) {
+        const nameRegex = /^[a-zA-Z\s]{2,30}$/;
+        return nameRegex.test(name.trim());
+      }
+
+      function validateEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email.trim());
+      }
+
+      function validatePhone(phone) {
+        if (phone.trim() === '') return true; // Optional field
+        const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
+        return phoneRegex.test(phone.replace(/[\s\-\(\)]/g, ''));
+      }
+
+      function validateMessage(message) {
+        return message.trim().length >= 10 && message.trim().length <= 500;
+      }
+
+      function showError(fieldId, message) {
+        const errorElement = document.getElementById(fieldId + 'Error');
+        const inputElement = document.getElementById(fieldId);
+        
+        errorElement.textContent = message;
+        errorElement.style.display = 'block';
+        inputElement.classList.add('error');
+      }
+
+      function hideError(fieldId) {
+        const errorElement = document.getElementById(fieldId + 'Error');
+        const inputElement = document.getElementById(fieldId);
+        
+        errorElement.style.display = 'none';
+        inputElement.classList.remove('error');
+      }
+
+      // Real-time validation
+      ['firstName', 'lastName', 'email', 'phone', 'message', 'subject'].forEach(fieldId => {
+        const field = document.getElementById(fieldId);
+        field.addEventListener('blur', function() {
+          validateField(fieldId, this.value);
+        });
+        
+        field.addEventListener('input', function() {
+          if (this.classList.contains('error')) {
+            validateField(fieldId, this.value);
+          }
+        });
+      });
+
+      function validateField(fieldId, value) {
+        let isValid = true;
+        
+        switch(fieldId) {
+          case 'firstName':
+            if (!validateName(value)) {
+              showError(fieldId, 'Please enter a valid first name (2-30 characters, letters only)');
+              isValid = false;
+            } else {
+              hideError(fieldId);
+            }
+            break;
+            
+          case 'lastName':
+            if (!validateName(value)) {
+              showError(fieldId, 'Please enter a valid last name (2-30 characters, letters only)');
+              isValid = false;
+            } else {
+              hideError(fieldId);
+            }
+            break;
+            
+          case 'email':
+            if (!validateEmail(value)) {
+              showError(fieldId, 'Please enter a valid email address');
+              isValid = false;
+            } else {
+              hideError(fieldId);
+            }
+            break;
+            
+          case 'phone':
+            if (!validatePhone(value)) {
+              showError(fieldId, 'Please enter a valid phone number');
+              isValid = false;
+            } else {
+              hideError(fieldId);
+            }
+            break;
+            
+          case 'message':
+            if (!validateMessage(value)) {
+              showError(fieldId, 'Message must be between 10-500 characters');
+              isValid = false;
+            } else {
+              hideError(fieldId);
+            }
+            break;
+            
+          case 'subject':
+            if (value.trim() === '') {
+              showError(fieldId, 'Please select a subject');
+              isValid = false;
+            } else {
+              hideError(fieldId);
+            }
+            break;
+        }
+        
+        return isValid;
+      }
+
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(contactForm);
+        const firstName = formData.get('firstName');
+        const lastName = formData.get('lastName');
+        const email = formData.get('email');
+        const phone = formData.get('phone');
+        const subject = formData.get('subject');
+        const message = formData.get('message');
+        
+        // Validate all fields
+        let isFormValid = true;
+        
+        if (!validateField('firstName', firstName)) isFormValid = false;
+        if (!validateField('lastName', lastName)) isFormValid = false;
+        if (!validateField('email', email)) isFormValid = false;
+        if (!validateField('phone', phone)) isFormValid = false;
+        if (!validateField('subject', subject)) isFormValid = false;
+        if (!validateField('message', message)) isFormValid = false;
+        
+        if (isFormValid) {
+          // Simulate form submission
+          const submitBtn = contactForm.querySelector('.submit-btn');
+          const originalText = submitBtn.innerHTML;
+          
+          submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+          submitBtn.disabled = true;
+          
+          setTimeout(() => {
+            contactForm.style.display = 'none';
+            successMessage.style.display = 'block';
+            
+            // Reset form after showing success
+            setTimeout(() => {
+              contactForm.reset();
+              contactForm.style.display = 'block';
+              successMessage.style.display = 'none';
+              submitBtn.innerHTML = originalText;
+              submitBtn.disabled = false;
+              
+              // Clear all error states
+              ['firstName', 'lastName', 'email', 'phone', 'message', 'subject'].forEach(fieldId => {
+                hideError(fieldId);
+              });
+            }, 3000);
+          }, 1500);
+        }
+      });
+
+      // Smooth scroll for read more links
+      const readMoreLinks = document.querySelectorAll('.read-more');
+      readMoreLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          // In a real implementation, this would navigate to the full blog post
+          alert('This would navigate to the full blog post in a real implementation.');
+        });
+      });
+    });
+  </script>
+
+  
